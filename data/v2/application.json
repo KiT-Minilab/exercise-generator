@@ -1,0 +1,242 @@
+[
+    {
+        "questionStem": "Which situation is most likely to put someone in a state of **dudgeon**?",
+        "questionType": "application",
+        "answers": [
+            "receiving a rude and disrespectful comment in front of a group of colleagues"
+        ],
+        "distractors": [
+            "finding a hidden treasure in the backyard",
+            "receiving a promotion at work",
+            "taking a relaxing vacation by the beach"
+        ]
+    },
+    {
+        "questionStem": "Which of the following would most likely **glisten**?",
+        "questionType": "application",
+        "answers": [
+            "a freshly polished diamond under bright lights"
+        ],
+        "distractors": [
+            "a muddy boot left out in the rain",
+            "a dull rock found on a beach",
+            "a faded photograph stored in a drawer"
+        ]
+    },
+    {
+        "questionStem": "Which situation best illustrates the word **apparently**?",
+        "questionType": "application",
+        "answers": [
+            "A person found a phone on a park bench and apparently decided to leave it there for the owner to come back and retrieve."
+        ],
+        "distractors": [
+            "A student was apparently absent from class because his alarm didn't go off.",
+            "The teacher apparently forgot to assign homework for the weekend.",
+            "It was apparently raining heavily outside, so the outdoor concert was canceled."
+        ]
+    },
+    {
+        "questionStem": "In a school play, each student was given a script with their **respective** lines to memorize. Which of the following scenarios would also require individuals to remember their specific parts?",
+        "questionType": "application",
+        "answers": [
+            "a group of musicians each playing a different instrument in an orchestra"
+        ],
+        "distractors": [
+            "a solo musician performing alone on stage",
+            "a choir singing in unison",
+            "a dance troupe moving in synchronized steps"
+        ]
+    },
+    {
+        "questionStem": "Which of the following is an example of someone being **eloquent**?",
+        "questionType": "application",
+        "answers": [
+            "a politician delivering a moving speech at a rally"
+        ],
+        "distractors": [
+            "a student reading quietly in the library",
+            "a chef preparing a delicious meal in the kitchen",
+            "a child playing on the playground"
+        ]
+    },
+    {
+        "questionStem": "Which of the following scenarios best exemplifies a pragmatic approach?",
+        "questionType": "application",
+        "answers": [
+            "Choosing a cost-effective solution that meets the immediate needs of the project."
+        ],
+        "distractors": [
+            "Continually changing plans without considering feasibility.",
+            "Ignoring practical considerations in favor of idealistic solutions.",
+            "Implementing a strategy solely based on theoretical concepts."
+        ]
+    },
+    {
+        "questionStem": "In which situation would it be most **prudent** to save money for unexpected expenses?",
+        "questionType": "application",
+        "answers": [
+            "a medical emergency that requires immediate treatment"
+        ],
+        "distractors": [
+            "buying a luxury watch as a gift for a friend",
+            "going on a shopping spree with a credit card",
+            "booking a last-minute vacation without checking the cost"
+        ]
+    },
+    {
+        "questionStem": "Which of the following would most likely require you to show a **certificate**?",
+        "questionType": "application",
+        "answers": [
+            "graduating from university"
+        ],
+        "distractors": [
+            "buying groceries at the store",
+            "reading a book at the library",
+            "walking in the park"
+        ]
+    },
+    {
+        "questionStem": "Which of the following situations would most likely make an employee feel **redundant**?",
+        "questionType": "application",
+        "answers": [
+            "receiving a notice of termination due to job duplication"
+        ],
+        "distractors": [
+            "being recognized by the company for outstanding performance",
+            "participating in a training program to develop new skills",
+            "working closely with team members on a new project"
+        ]
+    },
+    {
+        "questionStem": "Which of the following mysteries would most likely be described as **convoluted**?",
+        "questionType": "application",
+        "answers": [
+            "a crime novel with multiple plot twists and intricate clues"
+        ],
+        "distractors": [
+            "a straightforward list of instructions for assembling furniture",
+            "a clear and simple explanation of a scientific theory",
+            "a smooth and direct road through the countryside"
+        ]
+    },
+    {
+        "questionStem": "Which person would be most likely described as **discerning**?",
+        "questionType": "application",
+        "answers": [
+            "a book critic who can identify subtle literary themes"
+        ],
+        "distractors": [
+            "a marathon runner who trains daily",
+            "a child learning to tie their shoes for the first time",
+            "a musician playing the same song repeatedly without variation"
+        ]
+    },
+    {
+        "questionStem": "Which of the following examples best demonstrates someone being **resilient**?",
+        "questionType": "application",
+        "answers": [
+            "a student who continues to study hard despite facing multiple failures in exams"
+        ],
+        "distractors": [
+            "a person who easily gives up when faced with difficulties",
+            "a driver who speeds up when faced with a traffic jam",
+            "a chef who throws away a dish at the first sign of imperfection"
+        ]
+    },
+    {
+        "questionStem": "Which of the following would likely be used as an **ornament**?",
+        "questionType": "application",
+        "answers": [
+            "a decorative crystal vase on a mantelpiece"
+        ],
+        "distractors": [
+            "a hammer in a toolbox",
+            "a cookbook in a kitchen cabinet",
+            "a compass in a backpack"
+        ]
+    },
+    {
+        "questionStem": "Which scenario below best illustrates a situation that can be described as **ambiguous**?",
+        "questionType": "application",
+        "answers": [
+            "a cryptic message with multiple interpretations sent to a group of people"
+        ],
+        "distractors": [
+            "a clear and straightforward user manual for a new software program",
+            "a sunny day with blue skies and no clouds",
+            "a recipe book with easy-to-follow instructions for baking cookies"
+        ]
+    },
+    {
+        "questionStem": "Which of the following scenarios best illustrates an extravagant act?",
+        "questionType": "application",
+        "answers": [
+            "throwing a lavish party with expensive decorations and gourmet food"
+        ],
+        "distractors": [
+            "cleaning out the clutter in the garage",
+            "fixing a leaking faucet at home",
+            "taking a walk in the park on a sunny afternoon"
+        ]
+    },
+    {
+        "questionStem": "Which of the following situations best represents a **surplus**?",
+        "questionType": "application",
+        "answers": [
+            "a farmer having more crops harvested than needed for the season"
+        ],
+        "distractors": [
+            "a student receiving a passing grade",
+            "a worker being laid off due to lack of demand",
+            "a store experiencing a shortage of goods"
+        ]
+    },
+    {
+        "questionStem": "Which of the following actions shows humility?",
+        "questionType": "application",
+        "answers": [
+            "volunteering at a local shelter without seeking recognition"
+        ],
+        "distractors": [
+            "bragging about one's achievements on social media",
+            "demanding special treatment from others",
+            "putting others down to make oneself look better"
+        ]
+    },
+    {
+        "questionStem": "Which of the following scenarios best exemplifies the word **proliferate**?",
+        "questionType": "application",
+        "answers": [
+            "a species of insect rapidly spreading and establishing itself in a new habitat"
+        ],
+        "distractors": [
+            "a marathon runner completing a race with a personal record time",
+            "a chef creating a new recipe for a popular dish",
+            "a musician practicing the same piece of music daily to achieve perfection"
+        ]
+    },
+    {
+        "questionStem": "Which of the following positions would require a specific educational background and experience as part of the **qualification**?",
+        "questionType": "application",
+        "answers": [
+            "a neurosurgeon at a renowned hospital"
+        ],
+        "distractors": [
+            "a sales associate in a local retail store",
+            "a high school student assisting in a community service program",
+            "a volunteer helping at an animal shelter"
+        ]
+    },
+    {
+        "questionStem": "Where is the best place to watch the sunset over the ocean?",
+        "questionType": "application",
+        "answers": [
+            "a beach along the coast"
+        ],
+        "distractors": [
+            "a busy city street",
+            "a forest hiking trail",
+            "an indoor shopping mall"
+        ]
+    }
+]

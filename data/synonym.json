@@ -1,0 +1,242 @@
+[
+    {
+        "questionStem": "What is a synonym for **dudgeon**?",
+        "questionType": "synonym",
+        "answers": [
+            "anger"
+        ],
+        "distractors": [
+            "joy",
+            "peace",
+            "excitement"
+        ]
+    },
+    {
+        "questionStem": "What is a synonym for the word **glisten**?",
+        "questionType": "synonym",
+        "answers": [
+            "shine"
+        ],
+        "distractors": [
+            "dull",
+            "fade",
+            "obscure"
+        ]
+    },
+    {
+        "questionStem": "**apparently** has the same or almost the same meaning as",
+        "questionType": "synonym",
+        "answers": [
+            "seemingly"
+        ],
+        "distractors": [
+            "disbelief",
+            "obviously",
+            "doubtful"
+        ]
+    },
+    {
+        "questionStem": " **respective** has the same or almost the same meaning as",
+        "questionType": "synonym",
+        "answers": [
+            "individual"
+        ],
+        "distractors": [
+            "collective",
+            "combined",
+            "common"
+        ]
+    },
+    {
+        "questionStem": "**eloquent** has the same or almost the same meaning as",
+        "questionType": "synonym",
+        "answers": [
+            "articulate"
+        ],
+        "distractors": [
+            "obsolete",
+            "opaque",
+            "acerbic"
+        ]
+    },
+    {
+        "questionStem": "**pragmatic** has the same or almost the same meaning as",
+        "questionType": "synonym",
+        "answers": [
+            "practical"
+        ],
+        "distractors": [
+            "idealistic",
+            "abstract",
+            "illusory"
+        ]
+    },
+    {
+        "questionStem": "What is a synonym for the word **prudent**?",
+        "questionType": "synonym",
+        "answers": [
+            "wise"
+        ],
+        "distractors": [
+            "foolish",
+            "reckless",
+            "careless"
+        ]
+    },
+    {
+        "questionStem": "The word **certificate** is most similar in meaning to",
+        "questionType": "synonym",
+        "answers": [
+            "document"
+        ],
+        "distractors": [
+            "affirmation",
+            "warranty",
+            "diploma"
+        ]
+    },
+    {
+        "questionStem": "What is a synonym for **redundant**?",
+        "questionType": "synonym",
+        "answers": [
+            "unnecessary"
+        ],
+        "distractors": [
+            "essential",
+            "efficient",
+            "significant"
+        ]
+    },
+    {
+        "questionStem": "What is a synonym for **convoluted**?",
+        "questionType": "synonym",
+        "answers": [
+            "complex"
+        ],
+        "distractors": [
+            "clear",
+            "simple",
+            "straightforward"
+        ]
+    },
+    {
+        "questionStem": "**discerning** has the same or almost the same meaning as",
+        "questionType": "synonym",
+        "answers": [
+            "perceptive"
+        ],
+        "distractors": [
+            "confused",
+            "obscure",
+            "frivolous"
+        ]
+    },
+    {
+        "questionStem": "**resilient** has the same or almost the same meaning as",
+        "questionType": "synonym",
+        "answers": [
+            "flexible"
+        ],
+        "distractors": [
+            "fragile",
+            "brittle",
+            "rigid"
+        ]
+    },
+    {
+        "questionStem": "**ornament** has the same or almost the same meaning as",
+        "questionType": "synonym",
+        "answers": [
+            "decoration"
+        ],
+        "distractors": [
+            "demolition",
+            "contamination",
+            "interruption"
+        ]
+    },
+    {
+        "questionStem": "**ambiguous** has the same or almost the same meaning as",
+        "questionType": "synonym",
+        "answers": [
+            "uncertain"
+        ],
+        "distractors": [
+            "clear",
+            "precise",
+            "definite"
+        ]
+    },
+    {
+        "questionStem": "**extravagant** is most similar in meaning to",
+        "questionType": "synonym",
+        "answers": [
+            "lavish"
+        ],
+        "distractors": [
+            "modest",
+            "frugal",
+            "mundane"
+        ]
+    },
+    {
+        "questionStem": "The word **surplus** is most similar in meaning to:",
+        "questionType": "synonym",
+        "answers": [
+            "excess"
+        ],
+        "distractors": [
+            "lack",
+            "abundance",
+            "shortage"
+        ]
+    },
+    {
+        "questionStem": "What is a synonym for the word **humble**?",
+        "questionType": "synonym",
+        "answers": [
+            "modest"
+        ],
+        "distractors": [
+            "arrogant",
+            "confident",
+            "boastful"
+        ]
+    },
+    {
+        "questionStem": "**proliferate** has the same or almost the same meaning as",
+        "questionType": "synonym",
+        "answers": [
+            "multiply"
+        ],
+        "distractors": [
+            "decrease",
+            "evaporate",
+            "clarify"
+        ]
+    },
+    {
+        "questionStem": "**qualification** has the same or almost the same meaning as",
+        "questionType": "synonym",
+        "answers": [
+            "credentials"
+        ],
+        "distractors": [
+            "rejection",
+            "attribute",
+            "ambition"
+        ]
+    },
+    {
+        "questionStem": "**coast** is most similar in meaning to",
+        "questionType": "synonym",
+        "answers": [
+            "shore"
+        ],
+        "distractors": [
+            "mountain",
+            "valley",
+            "plateau"
+        ]
+    }
+]
