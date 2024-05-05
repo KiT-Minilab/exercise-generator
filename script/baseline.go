@@ -7,7 +7,7 @@ import (
 
 func ReadBaselineWords() ([]string, error) {
 	// Read the content from baseline_words.txt
-	content, err := os.ReadFile("baseline_words.txt")
+	content, err := os.ReadFile("script/baseline_words.txt")
 	if err != nil {
 		return nil, err
 	}

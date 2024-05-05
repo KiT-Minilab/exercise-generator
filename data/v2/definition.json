@@ -1,0 +1,242 @@
+[
+    {
+        "questionStem": "What is the definition of the word **dudgeon**?",
+        "questionType": "definition",
+        "answers": [
+            "a feeling of offense or deep resentment"
+        ],
+        "distractors": [
+            "an old-fashioned term for a dagger",
+            "a type of shellfish found in coastal waters",
+            "a traditional Scottish dance performed with swords"
+        ]
+    },
+    {
+        "questionStem": "What does the word **glisten** mean?",
+        "questionType": "definition",
+        "answers": [
+            "to shine or sparkle with reflected light"
+        ],
+        "distractors": [
+            "to make a loud noise",
+            "to cook something in the oven",
+            "to move quickly and lightly"
+        ]
+    },
+    {
+        "questionStem": "Which of the following defines the word **proportionately**?",
+        "questionType": "definition",
+        "answers": [
+            "in a way that maintains a consistent relationship in size, amount, or degree"
+        ],
+        "distractors": [
+            "with a sudden and unexpected change in direction",
+            "in a way that requires great skill and precision",
+            "by following a strict set of rules without any deviations"
+        ]
+    },
+    {
+        "questionStem": "What does the word **corresponding** mean?",
+        "questionType": "definition",
+        "answers": [
+            "matching or equivalent in some way"
+        ],
+        "distractors": [
+            "a sudden and violent vital change affecting every part of a living thing",
+            "hidden from public view",
+            "a technology for transmitting spoken words or sounds over a distance"
+        ]
+    },
+    {
+        "questionStem": "What is the meaning of the word **eloquent**?",
+        "questionType": "definition",
+        "answers": [
+            "expressing oneself fluently and persuasively"
+        ],
+        "distractors": [
+            "a sudden unpredictable change or shift in movement",
+            "marking a significant turning point or stage",
+            "relating to the sense of hearing"
+        ]
+    },
+    {
+        "questionStem": "What does the word **pragmatic** mean?",
+        "questionType": "definition",
+        "answers": [
+            "practical and realistic"
+        ],
+        "distractors": [
+            "eager and enthusiastic",
+            "expressing great pleasure or satisfaction",
+            "able to speak or write engagingly"
+        ]
+    },
+    {
+        "questionStem": "What is the definition of the word **prudent**?",
+        "questionType": "definition",
+        "answers": [
+            "wise in handling practical matters; exercising good judgment or common sense"
+        ],
+        "distractors": [
+            "showing great attention to detail in artistic work",
+            "having a strong sense of pride and self-respect",
+            "possessing a deep understanding of complex scientific theories"
+        ]
+    },
+    {
+        "questionStem": "What does the word **certificate** mean?",
+        "questionType": "definition",
+        "answers": [
+            "an official document or piece of paper that proves that something is true or correct"
+        ],
+        "distractors": [
+            "a small piece of jewelry worn on clothing",
+            "a traditional dance performed at weddings",
+            "a type of musical instrument made of wood"
+        ]
+    },
+    {
+        "questionStem": "What does the word **redundant** mean in the context of a work environment?",
+        "questionType": "definition",
+        "answers": [
+            "unnecessary because it is more than needed"
+        ],
+        "distractors": [
+            "essential for success",
+            "capable of being achieved",
+            "pertaining to current trends"
+        ]
+    },
+    {
+        "questionStem": "**Convoluted** means",
+        "questionType": "definition",
+        "answers": [
+            "complicated and difficult to understand"
+        ],
+        "distractors": [
+            "a type of pastry with layers of dough and butter",
+            "a process of converting data into code for security",
+            "a sudden and violent change in the Earth's crust"
+        ]
+    },
+    {
+        "questionStem": "The word **discerning** is best defined as",
+        "questionType": "definition",
+        "answers": [
+            "showing good judgment and understanding"
+        ],
+        "distractors": [
+            "being resistant to change",
+            "creating a loud noise",
+            "possessing a lot of money"
+        ]
+    },
+    {
+        "questionStem": "What does **resilient** mean?",
+        "questionType": "definition",
+        "answers": [
+            "able to withstand or recover quickly from difficult conditions"
+        ],
+        "distractors": [
+            "faint and delicate",
+            "quick and efficient",
+            "lacking adaptability"
+        ]
+    },
+    {
+        "questionStem": "**Ornament** refers to",
+        "questionType": "definition",
+        "answers": [
+            "a decorative item or detail added to embellish something"
+        ],
+        "distractors": [
+            "a small insect that lives underground in colonies",
+            "a loud and unpleasant sound",
+            "a type of mathematical calculation used in geometry"
+        ]
+    },
+    {
+        "questionStem": "**Ambiguous** means",
+        "questionType": "definition",
+        "answers": [
+            "having more than one possible meaning or interpretation"
+        ],
+        "distractors": [
+            "showing respect for someone or something",
+            "bright in color",
+            "causing great surprise or astonishment"
+        ]
+    },
+    {
+        "questionStem": "Which of the following best defines the word **extravagant**?",
+        "questionType": "definition",
+        "answers": [
+            "exceeding what is reasonable or appropriate; excessive"
+        ],
+        "distractors": [
+            "modest and simple",
+            "innocent and naïve",
+            "concealed and hidden"
+        ]
+    },
+    {
+        "questionStem": "What does the term **surplus** refer to?",
+        "questionType": "definition",
+        "answers": [
+            "an amount that is more than what is needed"
+        ],
+        "distractors": [
+            "a shortage of supplies",
+            "a temporary delay in production",
+            "a decrease in demand"
+        ]
+    },
+    {
+        "questionStem": "What does the word **humble** mean?",
+        "questionType": "definition",
+        "answers": [
+            "having or showing a modest or low estimate of one's own importance"
+        ],
+        "distractors": [
+            "loud and boastful",
+            "extravagantly decorated",
+            "expressing great joy"
+        ]
+    },
+    {
+        "questionStem": "What does the word **proliferate** mean?",
+        "questionType": "definition",
+        "answers": [
+            "grow rapidly or increase in numbers"
+        ],
+        "distractors": [
+            "reduce in size or number",
+            "remain stagnant in quantity",
+            "change in shape or appearance"
+        ]
+    },
+    {
+        "questionStem": "What does **qualification** mean?",
+        "questionType": "definition",
+        "answers": [
+            "a quality, skill, or type of experience that makes someone suitable for a particular job or activity"
+        ],
+        "distractors": [
+            "an official record showing that you have finished a training course or have the necessary skills, etc.",
+            "the people who work in a particular profession or job, considered as a group",
+            "the time at which an event is planned to start or a situation is likely to happen"
+        ]
+    },
+    {
+        "questionStem": "What does **coast** mean?",
+        "questionType": "definition",
+        "answers": [
+            "the land beside the sea; seashore"
+        ],
+        "distractors": [
+            "to hurry at top speed",
+            "to move with great difficulty",
+            "a large area of flat land covered with grass"
+        ]
+    }
+]
