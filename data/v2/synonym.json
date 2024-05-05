@@ -1,0 +1,242 @@
+[
+    {
+        "questionStem": "Which word is a synonym of **dudgeon**?",
+        "questionType": "synonym",
+        "answers": [
+            "anger"
+        ],
+        "distractors": [
+            "mirth",
+            "glee",
+            "contentment"
+        ]
+    },
+    {
+        "questionStem": "What is a synonym for **glisten**?",
+        "questionType": "synonym",
+        "answers": [
+            "sparkle"
+        ],
+        "distractors": [
+            "shatter",
+            "whisper",
+            "melt"
+        ]
+    },
+    {
+        "questionStem": "Which of the following words is most similar in meaning to the word **proportionately**?",
+        "questionType": "synonym",
+        "answers": [
+            "correspondingly"
+        ],
+        "distractors": [
+            "disproportionately",
+            "unequally",
+            "disconnectedly"
+        ]
+    },
+    {
+        "questionStem": "Most closely resembles the word **corresponding**?",
+        "questionType": "synonym",
+        "answers": [
+            "matching"
+        ],
+        "distractors": [
+            "confusing",
+            "regulating",
+            "proposing"
+        ]
+    },
+    {
+        "questionStem": "Which of the following words is most similar in meaning to **eloquent**?",
+        "questionType": "synonym",
+        "answers": [
+            "articulate"
+        ],
+        "distractors": [
+            "obscure",
+            "incoherent",
+            "muddled"
+        ]
+    },
+    {
+        "questionStem": "Which of the following words is a synonym of **pragmatic**?",
+        "questionType": "synonym",
+        "answers": [
+            "practical"
+        ],
+        "distractors": [
+            "impractical",
+            "theoretical",
+            "idealistic"
+        ]
+    },
+    {
+        "questionStem": "Which word is a synonym of **prudent**?",
+        "questionType": "synonym",
+        "answers": [
+            "wise"
+        ],
+        "distractors": [
+            "silly",
+            "reckless",
+            "foolish"
+        ]
+    },
+    {
+        "questionStem": "Which of the following words is a synonym of **certificate**?",
+        "questionType": "synonym",
+        "answers": [
+            "diploma"
+        ],
+        "distractors": [
+            "ticket",
+            "document",
+            "permit"
+        ]
+    },
+    {
+        "questionStem": "The word **superfluous** is most similar in meaning to which of the following?",
+        "questionType": "synonym",
+        "answers": [
+            "unnecessary"
+        ],
+        "distractors": [
+            "essential",
+            "considerate",
+            "coherent"
+        ]
+    },
+    {
+        "questionStem": "Which word is a synonym for **convoluted**?",
+        "questionType": "synonym",
+        "answers": [
+            "complex"
+        ],
+        "distractors": [
+            "clear",
+            "simple",
+            "direct"
+        ]
+    },
+    {
+        "questionStem": "Which of the following words is a synonym for **discerning**?",
+        "questionType": "synonym",
+        "answers": [
+            "perceptive"
+        ],
+        "distractors": [
+            "hesitant",
+            "obscure",
+            "frivolous"
+        ]
+    },
+    {
+        "questionStem": "Which of the following words is a synonym for **resilient**?",
+        "questionType": "synonym",
+        "answers": [
+            "strong"
+        ],
+        "distractors": [
+            "fragile",
+            "weak",
+            "brittle"
+        ]
+    },
+    {
+        "questionStem": "Which word is a synonym for **ornament**?",
+        "questionType": "synonym",
+        "answers": [
+            "decoration"
+        ],
+        "distractors": [
+            "fright",
+            "repel",
+            "saturate"
+        ]
+    },
+    {
+        "questionStem": "Which of the following words is a synonym for **ambiguous**?",
+        "questionType": "synonym",
+        "answers": [
+            "uncertain"
+        ],
+        "distractors": [
+            "clear",
+            "specific",
+            "definite"
+        ]
+    },
+    {
+        "questionStem": "Which word is a synonym for **extravagant**?",
+        "questionType": "synonym",
+        "answers": [
+            "lavish"
+        ],
+        "distractors": [
+            "frugal",
+            "modest",
+            "spare"
+        ]
+    },
+    {
+        "questionStem": "The word **surplus** is most closely related in meaning to which of the following words?",
+        "questionType": "synonym",
+        "answers": [
+            "excess"
+        ],
+        "distractors": [
+            "relief",
+            "generation",
+            "quench"
+        ]
+    },
+    {
+        "questionStem": "Which word is a synonym for **humble**?",
+        "questionType": "synonym",
+        "answers": [
+            "modest"
+        ],
+        "distractors": [
+            "arrogant",
+            "boastful",
+            "conceited"
+        ]
+    },
+    {
+        "questionStem": "Which word is a synonym for **proliferate**?",
+        "questionType": "synonym",
+        "answers": [
+            "multiply"
+        ],
+        "distractors": [
+            "merge",
+            "decrease",
+            "persist"
+        ]
+    },
+    {
+        "questionStem": "Another word that has a similar meaning to **qualification** is",
+        "questionType": "synonym",
+        "answers": [
+            "credential"
+        ],
+        "distractors": [
+            "rejection",
+            "limitation",
+            "exception"
+        ]
+    },
+    {
+        "questionStem": "Which of the following words is a synonym of **coast**?",
+        "questionType": "synonym",
+        "answers": [
+            "shore"
+        ],
+        "distractors": [
+            "inland",
+            "continent",
+            "valley"
+        ]
+    }
+]
