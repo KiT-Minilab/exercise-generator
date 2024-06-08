@@ -61,8 +61,12 @@ func main() {
 func startServer(ctx context.Context, cmd *cli.Command) error {
 	h := api.NewApiHandler(logger, cfg)
 
-	http.HandleFunc("GET /", h.HelloWorld)
 	http.HandleFunc("GET /hello", h.HelloWorld)
+	http.HandleFunc("GET /api/v1/generation-configs", h.ListGenerationConfig)
+	http.HandleFunc("POST /api/v1/generation-configs", h.CreateGenerationConfig)
+	http.HandleFunc("PUT /api/v1/generation-configs/{id}", h.UpdateGenerationConfig)
+
+	log.Println("Starting server on :8080")
 	err := http.ListenAndServe(":8080", nil)
 	if err != nil {
 		log.Fatalln("Error starting server:", err)
