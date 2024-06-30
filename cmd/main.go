@@ -45,9 +45,9 @@ func main() {
 				Usage: "Generate evaluation template for baseline words in csv format",
 				Flags: []cli.Flag{
 					&cli.StringFlag{Name: "questionType", Value: "", Usage: "specify the question type (definition, synonym, application)"},
-					&cli.StringFlag{Name: "aiModel", Value: "openai", Usage: "specify the AI model (openai, gemini)"},
+					&cli.StringFlag{Name: "provider", Value: "OPENAI", Usage: "specify the AI provider (OPENAI, GOOGLE)"},
 				},
-				Action: generateBaselineQuestions,
+				Action: evaluateBaselineWords,
 			},
 		},
 	}
