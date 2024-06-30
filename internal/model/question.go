@@ -6,3 +6,8 @@ type MultipleChoicesQuestion struct {
 	Answers      []string `json:"answers"`
 	Distractors  []string `json:"distractors"`
 }
+
+type QuestionRequest struct {
+	Word         string
+	QuestionType string
+}

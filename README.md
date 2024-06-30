@@ -1,9 +1,27 @@
-# How to run
-## For generate a single question with a certain question type and a word
+# Exercise Generator
+
+## Run API server in local
+
 ```
-go run main.go -script=generate-question -questionType=application -word=apparently
+go run cmd/*.go server
 ```
-## For generate questions from baseline word list
+
+## Run evaluation script
+
+### Step 1: Specify input/output dir with your own config.yaml
+
+- Copy and fill value in your own `config.yaml` file
+- Specify the text file that contains all your words to evaluate the model with field `EVALUATION_CONFIG.BASELINE_FILE_PATH`
+- Specify the result directory with field `EVALUATION_CONFIG.RESULT_DIR`
+
+### Step 2: Run command
+
 ```
-go run main.go -script=generate-baseline-question -questionType=application
+go run cmd/*.go generate-evaluation-template -questionType=<question_type> -provider=openai
 ```
+
+For `<question_type>`, there are 3 options:
+
+1. `definition`: to generate and evaluate the language model with **definition** question
+2. `synonym`: to generate and evaluate the language model with **synonym** question
+3. `application`: to generate and evaluate the language model with **application** question

@@ -1,9 +1,11 @@
 package openai
 
 import (
+	"bytes"
 	"context"
 	"encoding/json"
 	"fmt"
+	"text/template"
 
 	"exercise-generator/config"
 	"exercise-generator/internal/model"
@@ -13,7 +15,7 @@ import (
 )
 
 type OpenaiAdapter interface {
-	GenerateEnglishMultipleChoicesQuestion(ctx context.Context, word string, questionType string) (*model.MultipleChoicesQuestion, error)
+	GenerateEnglishMultipleChoicesQuestion(ctx context.Context, genConfig model.GenerationConfig, questionRequest model.QuestionRequest) (*model.MultipleChoicesQuestion, error)
 }
 
 type openaiAdapterImpl struct {
@@ -32,28 +34,39 @@ func NewOpenaiAdapter(cfg *config.Config, logger *zap.Logger) OpenaiAdapter {
 	}
 }
 
-func (o *openaiAdapterImpl) GenerateEnglishMultipleChoicesQuestion(ctx context.Context, word string, questionType string) (*model.MultipleChoicesQuestion, error) {
-	logger := o.log.Named("openaiAdapterImpl.GenerateQuestion").With(zap.String("word", word), zap.String("question_type", questionType))
+func (o *openaiAdapterImpl) GenerateEnglishMultipleChoicesQuestion(ctx context.Context, genCfg model.GenerationConfig, questionRequest model.QuestionRequest) (*model.MultipleChoicesQuestion, error) {
+	logger := o.log.Named("openaiAdapterImpl.GenerateQuestion")
+
+	t := template.Must(template.New("userMessage").Parse(genCfg.UserMessage))
+
+	var userMessageBuf bytes.Buffer
+
+	// Execute the template and write to the buffer
+	err := t.Execute(&userMessageBuf, questionRequest)
+	if err != nil {
+		logger.Error("failed to execute template", zap.Error(err))
+		return nil, err
+	}
 
 	resp, err := o.client.CreateChatCompletion(ctx, openai.ChatCompletionRequest{
-		Model: openai.GPT3Dot5Turbo0125,
+		Model: genCfg.GenModel,
 		Messages: []openai.ChatCompletionMessage{
 			{
 				Role:    openai.ChatMessageRoleSystem,
-				Content: o.cfg.OpenaiClient.SystemMessage,
+				Content: genCfg.SystemMessage,
 			},
 			{
 				Role:    openai.ChatMessageRoleAssistant,
-				Content: o.cfg.OpenaiClient.AssistanceMessage,
+				Content: genCfg.AssistantMessage,
 			},
 			{
 				Role:    openai.ChatMessageRoleUser,
-				Content: fmt.Sprintf(o.cfg.OpenaiClient.UserMessageTemplate, questionType, word, word),
+				Content: userMessageBuf.String(),
 			},
 		},
-		MaxTokens:   o.cfg.OpenaiClient.MaxTokens,
-		Temperature: o.cfg.OpenaiClient.Temperature,
-		TopP:        o.cfg.OpenaiClient.TopP,
+		MaxTokens:   genCfg.MaxTokens,
+		Temperature: genCfg.Temperature,
+		TopP:        genCfg.TopP,
 		ResponseFormat: &openai.ChatCompletionResponseFormat{
 			Type: openai.ChatCompletionResponseFormatTypeJSONObject,
 		},

@@ -11,6 +11,7 @@ type IGenerationConfigRepository interface {
 	CreateGenerationConfig(ctx context.Context, params CreateGenerationConfigParams) error
 	UpdateGenerationConfig(ctx context.Context, params UpdateGenerationConfigParams) error
 	ListGenerationConfig(ctx context.Context) ([]model.GenerationConfig, error)
+	GetGenerationConfigByProvider(ctx context.Context, provider string) (*model.GenerationConfig, error)
 }
 
 type CreateGenerationConfigParams struct {
@@ -89,4 +90,13 @@ func (r *repositoryImpl) ListGenerationConfig(ctx context.Context) ([]model.Gene
 		return nil, err
 	}
 	return genCfgs, nil
+}
+
+func (r *repositoryImpl) GetGenerationConfigByProvider(ctx context.Context, provider string) (*model.GenerationConfig, error) {
+	var genCfg model.GenerationConfig
+	err := r.db.GetContext(ctx, &genCfg, "SELECT * FROM generation_config WHERE provider = $1", provider)
+	if err != nil {
+		return nil, err
+	}
+	return &genCfg, nil
 }
