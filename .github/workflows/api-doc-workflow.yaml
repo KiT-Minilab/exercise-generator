@@ -23,17 +23,16 @@ jobs:
         with:
           sparse-checkout: |
             api-doc
+            _site
 
       - name: Build static doc
-        run: npx @redocly/cli build-docs api-doc/openapi.yaml --output=api-doc/index.html
+        run: npx @redocly/cli build-docs api-doc/openapi.yaml --output=_site/api-doc.html
 
       - name: Set up Pages
         uses: actions/configure-pages@v5
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
-        with:
-          path: api-doc
 
       - name: Deploy
         uses: actions/deploy-pages@v4
