@@ -1,0 +1,39 @@
+name: Deploy API doc to GitHub Pages
+on:
+  push:
+    branches:
+      - chore/try-github-actions-for-monorepo # for testing, will replace with 'main' after done
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+# Do I need these?
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            api-doc
+
+      - name: Build static doc
+        run: npx @redocly/cli build-docs api-doc/openapi.yaml --output=api-doc/index.html
+
+      - name: Set up Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          artifact-name: api-doc
+
+      - name: Deploy
+        uses: actions/deploy-pages@v4
