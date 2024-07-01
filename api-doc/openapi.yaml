@@ -1,0 +1,196 @@
+openapi: 3.0.3
+info:
+  title: ExGen - OpenAPI 3.0
+  description: Documentation for ExGenV1 APIs
+  version: 0.1.0
+externalDocs:
+  description: UX/UI Design
+  url: https://rtwpkk.csb.app
+servers:
+  - url: todo
+tags:
+  - name: word
+  - name: question
+paths:
+  /words:
+    post:
+      tags:
+        - word
+      summary: Add word(s) to user's vault
+      operationId: addWords
+      security:
+        - exgen_auth: []
+      requestBody:
+        required: true
+        description: List of words to add
+        content:
+          application/json:
+            schema:
+              type: array
+              items:
+                $ref: "#/components/schemas/Word"
+      responses:
+        "201":
+          description: Word successfully added
+        "409":
+          description: Word already exists
+        "404":
+          description: Bad request (possible cases e.g. user not found, word not found, duplicate word)
+
+    get:
+      tags:
+        - word
+      summary: List words
+      operationId: listWords
+      security:
+        - exgen_auth: []
+      parameters:
+        - name: q
+          in: query
+          description: search term to filter words by
+          schema:
+            type: string
+        - name: extended
+          in: query
+          description: if true, fetch from an external dictionary for unmatched words
+          schema:
+            type: boolean
+            default: false
+        - name: limit
+          in: query
+          description: max number of words to return in each array
+          schema:
+            type: integer
+            default: 3
+            minimum: 1
+            maximum: 200
+      responses:
+        "200":
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  added:
+                    type: array
+                    items:
+                      $ref: "#/components/schemas/AddedWord"
+                  unadded:
+                    type: array
+                    items:
+                      $ref: "#/components/schemas/Word"
+
+  /words/learned:
+    post:
+      tags:
+        - word
+      summary: Mark word(s) as learned by user
+      description: (e.g. when user answer questions for those words correctly)
+      operationId: markWordsAsLearned
+      security:
+        - exgen_auth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                wordIds:
+                  type: array
+                  items:
+                    type: integer
+      responses:
+        "200":
+          description: Words successfully updated
+        "404":
+          description: Bad request (e.g. user not found, wordId does not exist in this user's vault)
+
+  /questions:
+    get:
+      tags:
+        - question
+      summary: Generate questions
+      operationId: listQuestions
+      security:
+        - exgen_auth: []
+      parameters:
+        - name: limit
+          in: query
+          description: max number of questions to generate
+          schema:
+            type: integer
+            default: 50
+            minimum: 1
+            maximum: 100
+      responses:
+        "200":
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Question"
+        "411":
+          description: User has no words in vault
+
+components:
+  headers:
+    x-user-id:
+      schema:
+        type: integer
+        minimum: 1
+  schemas:
+    Word:
+      type: object
+      properties:
+        word:
+          type: string
+        wordType:
+          type: string
+          enum:
+            - noun
+            - verb
+            - adj
+        shortMeaning:
+          type: string
+    AddedWord:
+      allOf:
+        - $ref: "#/components/schemas/Word"
+        - type: object
+          properties:
+            id:
+              type: integer
+            createdAt:
+              type: string
+              description: iso string
+              example: "2024-05-10T16:45:19+07:00"
+    Question:
+      type: object
+      properties:
+        questionStem:
+          description: question stem with the word-to-learn highlighted
+          type: string
+          example: "**cone** means"
+        questionType:
+          type: string
+          enum:
+            - definition
+            - synonym
+            - application
+        answers:
+          type: array
+          items:
+            type: string
+        distractors:
+          type: array
+          items:
+            type: string
+
+  securitySchemes:
+    exgen_auth:
+      type: apiKey
+      name: x-user-id
+      in: header
