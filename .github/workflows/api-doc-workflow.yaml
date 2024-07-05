@@ -2,7 +2,7 @@ name: Deploy API doc to GitHub Pages
 on:
   push:
     branches:
-      - chore/try-github-actions-for-monorepo # for testing, will replace with 'main' after done
+      - main
 
 permissions:
   contents: read
