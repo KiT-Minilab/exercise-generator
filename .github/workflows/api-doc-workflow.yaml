@@ -4,12 +4,10 @@ on:
     branches:
       - chore/try-github-actions-for-monorepo # for testing, will replace with 'main' after done
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
-# Do I need these?
-# permissions:
-#   contents: read
-#   pages: write
-#   id-token: write
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 
 jobs:
   deploy:
