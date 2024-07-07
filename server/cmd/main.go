@@ -2,11 +2,12 @@ package main
 
 import (
 	"context"
-	"exercise-generator/config"
-	"exercise-generator/internal/api"
 	"log"
 	"net/http"
 	"os"
+
+	"exercise-generator/config"
+	"exercise-generator/internal/api"
 
 	"github.com/urfave/cli/v3"
 	"go.uber.org/zap"
