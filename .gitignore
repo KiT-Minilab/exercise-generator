@@ -1,4 +1,4 @@
 .idea
 .vscode
-vendor
-config.yaml
+server/vendor
+server/config.yaml
